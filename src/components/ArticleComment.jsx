@@ -11,7 +11,7 @@ function ArticleComment({ comment }) {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3001/api/comments/${id}`);
+      await axios.delete(`https://blogging-backened.onrender.com/api/comments/${id}`);
       // Handle successful deletion, e.g., remove the comment from the UI
       alert('Comment deleted');
     } catch (error) {
